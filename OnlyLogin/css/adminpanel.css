@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(to right, #99ccff 0%, #cc66ff 100% );
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+*{
+    font-family: poppins, sans-serif;
+}
+.body2{
+    max-width: 100%;
+    height:auto;
+    display:flex;
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 150px;
+    box-shadow: 10px 10px 20px 1px ;
+}
+.image{
+    width: 250px;
+    max-width: 100%;
+    height:auto;
+
+}
+.login{
+    width: 250px;
+    max-width: 90%;
+    height:auto;
+
+}
+.admin{
+    text-align: center;
+    font-size: 23px;
+}
+.enter{
+    outline: none;
+    border: transparent;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: 95%;
+    padding: 5px;
+}
+.login{
+    max-width: 100%;
+    height:auto;
+}
+.login1{
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font: bold;
+    padding: 6px 40px ;
+    background: linear-gradient(to right, #00cc99 -41%, #00ff99 100%);
+    color: white;
+}
+.login2{
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font: bold;
+    padding: 6px 40px ;
+    background: linear-gradient(to right, #00cc99 -41%, #00ff99 100%);
+    color: white;
+}
+.login1 a{
+ text-decoration: none;
+ color: white;
+}
+
+.login1:hover{
+     background: linear-gradient(to right, #99ccff 0%, #cc66ff 100% );
+     cursor: pointer;
+}
+.buttons{
+    display:flex;
+    justify-content:space-around
+
+}
+.remember{
+    width: 11px;
+    height: 11px;
+    align-items: center;
+}
+span{
+    font-size: 13px;
+}
+a{
+    font-size: 12px;
+}
+@media only screen and (max-width:768px){
+    .body2{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 0;
+    }
+}
+@media only screen and (min-height:812px){
+    .body2{
+        max-height: 100%;
+    }
+}
+
+@media only screen and (min-height:1024px){
+    body{
+        margin-top: 175px;
+    }
+}
