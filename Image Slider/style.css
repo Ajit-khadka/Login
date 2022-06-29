@@ -1,0 +1,114 @@
+html{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFC133;
+    margin-top: 150px;
+    
+
+}
+.book{
+    width: 270px;
+    height: 500px;
+    border-radius: 10px;
+    border: 3px solid #FF1383;
+    overflow: hidden; 
+   
+}
+.pageNumber{
+    height: 20px;
+    width: 200%;
+    display: flex;
+    
+}
+.pageNumber input{
+    display: none;
+    
+}
+.page{
+    width: auto;
+    transition: 2s;
+}
+img{
+    width: auto;
+    height: 500px;
+    
+}
+
+/* manual turn */
+.manuel-turn{
+    position: absolute;
+    width: 80px;
+    margin-top: 450px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+ 
+}
+.manuel-btn{
+    border: 2px solid #FF1383;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+.manuel-btn:not(:last-child){
+    margin-right: 40px;
+
+}
+.manuel-btn:hover{
+    background: #FF1383;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -50.1%;
+}
+#radio3:checked ~ .first{
+    margin-left: -100%;
+}
+#radio4:checked ~ .first{
+    margin-left: -153%;
+}
+
+/* auto turn */
+.auto-turn {
+    position: absolute;
+    width: 80px;
+    margin-top: 450px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+ 
+} 
+
+.auto-turn div{
+    border: 2px solid #FF1383;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+} 
+.auto-turn div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .auto-turn .auto-turn1{
+    background: #FF1383;
+}
+#radio2:checked ~ .auto-turn .auto-turn2{
+    background: #FF1383;
+}
+#radio3:checked ~ .auto-turn .auto-turn3{
+    background: #FF1383;
+}
+#radio4:checked ~ .auto-turn .auto-turn4{
+    background: #FF1383;
+}

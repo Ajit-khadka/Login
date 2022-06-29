@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Slider</title>
+  </head>
+  <body>
+    <div class="book">
+
+      <div class="pageNumber">
+
+        <input type="radio" name="scroll" id="radio1" />
+        <input type="radio" name="scroll" id="radio2" />
+        <input type="radio" name="scroll" id="radio3" />
+        <input type="radio" name="scroll" id="radio4" />
+
+      <div class="page first">
+        <img src="./pics/1.jpg" alt="just image">
+      </div>
+
+      <div class="page">
+        <img src="./pics/2.jpg" alt="just image">
+      </div>
+
+      <div class="page">
+        <img src="./pics/3.jpg" alt="just image">
+      </div>
+
+      <div class="page">
+        <img src="./pics/4.jpg" alt="just image">
+      </div>
+
+      <div class="auto-turn">
+
+        <div class="auto-turn1"></div>
+        <div class="auto-turn2"></div>
+        <div class="auto-turn3"></div>
+        <div class="auto-turn4"></div>
+
+      </div>
+
+      <div class="manuel-turn">
+
+        <label for="radio1" class="manuel-btn"></label>
+        <label for="radio2" class="manuel-btn"></label>
+        <label for="radio3" class="manuel-btn"></label>
+        <label for="radio4" class="manuel-btn"></label>
+
+      </div>
+
+  
+    </div>
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      
+      if(counter > 4){
+        counter = 1;
+      }
+
+    },5000);
+
+    </script>
+
+  </body>
+</html>
